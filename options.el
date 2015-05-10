@@ -18,6 +18,8 @@
       inhibit-splash-screen t
       ;; disable git from vc mode
       vc-handled-backends (quote (RCS CVS SVN SCCS Bzr Hg Mtn Arch))
+      ;; disable magit warning
+      magit-last-seen-setup-instructions "1.4.0"
       ;; organize buffer menu by mode
       mouse-buffer-menu-mode-mult 1)
 
@@ -34,7 +36,6 @@
 (setq backup-directory-alist `((".*" . , backup-dir)))
 (setq auto-save-file-name-transforms
       `((".*" , backup-dir t)))
-
 
 ;; persp-mode options
 (with-eval-after-load "persp-mode-autoloads"
