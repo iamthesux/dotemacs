@@ -88,7 +88,7 @@
      (sux-bg-1 "#0a0a0a")
      (sux-bg "#292B2E")
      (sux-bg+1 "#221F27")
-     (sux-bg+2 "#202020")
+     (sux-bg+2 "#232529")
      (sux-bg+3 "#333333")
 
      (sux-fg-1 "#666666")
@@ -200,13 +200,15 @@
 
  ;; magit and diff-mode
  `(diff-file-header ((t (weight: bold :background ,sux-bg+3 ))))
- `(diff-hunk-header ((t ( :background ,sux-bg+2 ))))
- `(diff-added ((t (:foreground ,sux-green :background ,sux-bg ))))
- `(diff-removed ((t (:foreground ,sux-bg+3 :background ,sux-bg ))))
- `(magit-item-highlight ((t (:inherit nil :background ,sux-bg-1 ))))
- ;; `(magit-diff-add ((t (:foreground ,sux-green))))
- ;;`(magit-diff-del ((t (:foreground ,sux-bg+3 ))))
- `(magit-diff-none ((t (:foreground ,sux-fg-1 :background ,sux-bg ))))
+ `(diff-hunk-header ((t ( :background ,sux-bg ))))
+ `(magit-diff-hunk-header ((t (:foreground ,sux-fg+1 :background ,sux-bg ))))
+ `(magit-item-highlight ((t ( :background  ,sux-bg+2))))
+ `(magit-diff-file-header ((t ( :background ,sux-bg ))))
+ `(magit-section-title ((t (:foreground ,sux-fg+1 ))))
+;; `(magit-section ((t (:background ,sux-bg ))))
+ `(magit-diff-add ((t (:foreground ,sux-green))))
+ `(magit-diff-del ((t (:foreground ,sux-aqua-1 ))))
+ `(magit-diff-none ((t (:foreground ,sux-fg ))))
  `(magit-whitespace-warning-face ((t ( :background ,sux-yellow ))))
 
  ;; Mode Line
