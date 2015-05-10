@@ -1,6 +1,7 @@
 backups/*
 elpa/*
 el-get/*
+server/*
 custom.el
 ido.last
 smex-items
