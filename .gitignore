@@ -1,0 +1,11 @@
+backups/*
+elpa/*
+el-get/*
+custom.el
+ido.last
+smex-items
+auto-save-list/*
+persp-confs/*
+*.elc
+*~
+#*
